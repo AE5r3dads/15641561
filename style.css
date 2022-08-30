@@ -29,13 +29,13 @@ hr {
 
 #nav-menu {
     background-color: #212121;
-    width: 250px;
+
     height: 100vh;
     display: flex;
     justify-content: center;
     position: fixed;
     top: 0;
-    left:100%;
+    left: -100%;
     transition: 850ms;
 }
 
@@ -104,4 +104,21 @@ hr {
     height: 200px;
     display: flex;
     flex-direction: column;
+}
+
+main {
+width: 80%;
+min-width: 600px;
+height: 100vh;
+display: flex;
+}
+
+.spo{
+    color: black;
+    size: 55px;
+}
+
+.sp{
+    color: black;
+    size: 55px;
 }

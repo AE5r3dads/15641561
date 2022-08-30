@@ -13,6 +13,7 @@
         <a href="#" class="menu-bars" id="show-menu" active>
             <i class="fas fa-bars"></i>
         </a>
+        <input type="search" name="?" id="searchbar" placeholder="Search">   <button type="submit">Search</button>
     </div>
     <nav id="nav-menu">
         <ul class="nav-menu-items">
@@ -37,7 +38,7 @@
         </ul>
     </nav>
     <main>
-        <video autoplay spellcheck="true" controls>
+        <video controls autoplay aria-atomic="true">
         <source src="./video2.mp4"
 
         </video>
@@ -46,6 +47,25 @@
         <span><h1>Mine Anything  ماين كرافت لكن تقدر تكسر اي شي</h1></span>
 
     </div>
+    <div class="wrapper">
+        <div class="like">
+            <i onclick="like()"  id="li" class="fas fa-thumbs-up"></i>
+        </div>
+            <div class="dislike">
+            <i onclick="dislike()" id="di" class="fa-solid fa-thumbs-down"></i>
+        </div>
+    </div>
+
+    <script>
+        function like(){
+            document.getElementById("li").style.color = "green"
+            document.getElementById("di").style.color = "gray"
+        }
+        function dislike(){
+            document.getElementById("di").style.color = "red"
+            document.getElementById("li").style.color = "gray"
+        }
+    </script>
 </body>
 <script src="./app.js"></script>
 </html>

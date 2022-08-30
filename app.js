@@ -9,3 +9,12 @@ openMenu.addEventListener('click', function() {
 hideMenuIcon.addEventListener('click', function(){
     sideMenu.classList.remove('active')
 })
+
+
+let navbar = document.querySelector('#navbar');
+function phones(phone){
+    img.src = phone;
+}
+function colors(color){
+    container.style.background = color;
+}
